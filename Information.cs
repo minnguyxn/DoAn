@@ -47,5 +47,10 @@ namespace DoAn
             }
             
         }
+
+        private void nameC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
