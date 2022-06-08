@@ -12,9 +12,11 @@ namespace DoAn
 {
     public partial class MainScreen : Form
     {
-        public MainScreen()
+        private string cuser;
+        public MainScreen(string current_user)
         {
             InitializeComponent();
+            cuser = current_user;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -43,6 +45,11 @@ namespace DoAn
             this.panel6.Controls.Add(changePass);
             FormBorderStyle = FormBorderStyle.None;
             changePass.Show();
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

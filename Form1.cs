@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SQLite;
 namespace DoAn
 {
     public partial class Form1 : Form
     {
+        private string current_user;
         public Form1()
         {
             InitializeComponent();
@@ -21,10 +22,28 @@ namespace DoAn
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Tuser.Text == "user" && Tpass.Text == "pass")
+            string username = Tuser.Text;
+            string password = Tpass.Text;
+            // khởi tạo connect
+            SQLiteConnection _con = new SQLiteConnection();
+            string _strConnect = "Data Source=MyDatabase.db;Version=3;";
+            _con.ConnectionString = _strConnect;
+            _con.Open(); // mở kết nối
+                         // câu lệnh insert user
+            string InsertSql = "SELECT * FROM users WHERE username= ? AND password=?";
+            // Thực thi câu lệnh
+            SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con);
+            cmd.Parameters.Add("$username", DbType.String).Value = username;
+            cmd.Parameters.Add("$password", DbType.String).Value = password;
+
+            SQLiteDataReader rdr = cmd.ExecuteReader();
+            //_con.Close(); // đóng kết nối
+
+            if (rdr.HasRows)
             {
+                // set biến current_user
                 panel0.Controls.Clear();
-                MainScreen mainscreen = new MainScreen();
+                MainScreen mainscreen = new MainScreen(current_user);
                 mainscreen.TopLevel = false;
                 mainscreen.Dock = DockStyle.Fill;
                 this.panel0.Controls.Add(mainscreen);
@@ -59,6 +78,11 @@ namespace DoAn
             this.panel1.Controls.Add(forgotten);
             //FormBorderStyle = FormBorderStyle.None;
             forgotten.Show();
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
