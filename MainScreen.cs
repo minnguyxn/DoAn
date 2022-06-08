@@ -17,6 +17,7 @@ namespace DoAn
         {
             InitializeComponent();
             cuser = current_user;
+            label1.Text = "Hello, " + cuser;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -28,7 +29,7 @@ namespace DoAn
         private void bunifuTileButton1_Click(object sender, EventArgs e)
         {
             panel6.Controls.Clear();
-            Information information = new Information();
+            Information information = new Information(cuser);
             information.TopLevel = false;
             information.Dock = DockStyle.Fill;
             this.panel6.Controls.Add(information);
@@ -39,7 +40,7 @@ namespace DoAn
         private void bunifuTileButton7_Click(object sender, EventArgs e)
         {
             panel6.Controls.Clear();
-            ChangePass changePass = new ChangePass();
+            ChangePass changePass = new ChangePass(cuser);
             changePass.TopLevel = false;
             changePass.Dock = DockStyle.Fill;
             this.panel6.Controls.Add(changePass);

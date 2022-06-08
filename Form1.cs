@@ -43,6 +43,7 @@ namespace DoAn
             {
                 // set biến current_user
                 panel0.Controls.Clear();
+                current_user = username;
                 MainScreen mainscreen = new MainScreen(current_user);
                 mainscreen.TopLevel = false;
                 mainscreen.Dock = DockStyle.Fill;

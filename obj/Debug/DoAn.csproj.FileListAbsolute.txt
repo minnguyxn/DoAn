@@ -63,3 +63,11 @@ D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\System.Data.SQLite.Linq.dll
 D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\EntityFramework.xml
 D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\EntityFramework.SqlServer.xml
 D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\System.Data.SQLite.xml
+D:\DoAn\DoAn\bin\Debug\EntityFramework.dll
+D:\DoAn\DoAn\bin\Debug\EntityFramework.SqlServer.dll
+D:\DoAn\DoAn\bin\Debug\System.Data.SQLite.dll
+D:\DoAn\DoAn\bin\Debug\System.Data.SQLite.EF6.dll
+D:\DoAn\DoAn\bin\Debug\System.Data.SQLite.Linq.dll
+D:\DoAn\DoAn\bin\Debug\EntityFramework.xml
+D:\DoAn\DoAn\bin\Debug\EntityFramework.SqlServer.xml
+D:\DoAn\DoAn\bin\Debug\System.Data.SQLite.xml

@@ -59,13 +59,19 @@ namespace DoAn
                     else
                     {
                         // câu lệnh insert user
-                        string InsertSql = @"INSERT INTO users (id,username, password, pass2) values ($id,$username, $password, $password2)";
+                        string InsertSql = @"INSERT INTO users (id,username, password, pass2, fullname, displayname, email, address, phone, avatar) values ($id,$username, $password, $password2, $fullname, $displayname, $email, $address, $phone, $avatar)";
                         // Thực thi câu lệnh
                         SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con);
                         cmd.Parameters.Add("$id", DbType.String).Value = Guid.NewGuid().ToString();
                         cmd.Parameters.Add("$username", DbType.String).Value = username;
                         cmd.Parameters.Add("$password", DbType.String).Value = password;
                         cmd.Parameters.Add("$password2", DbType.String).Value = password2;
+                        cmd.Parameters.Add("$fullname", DbType.String).Value = "null";
+                        cmd.Parameters.Add("$displayname", DbType.String).Value = "null";
+                        cmd.Parameters.Add("$email", DbType.String).Value = "null";
+                        cmd.Parameters.Add("$address", DbType.String).Value = "null";
+                        cmd.Parameters.Add("$phone", DbType.String).Value = "null";
+                        cmd.Parameters.Add("$avatar", DbType.String).Value = "D:\\DoAn\\DoAn\\bin\\source_csharp\\avatar.jpg";
 
                         cmd.ExecuteNonQuery();
 
