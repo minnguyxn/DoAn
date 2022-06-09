@@ -33,13 +33,6 @@ D:\DoAn\DoAn\obj\Debug\DoAn.Forgotten.resources
 D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\DoAn.exe.config
 D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\DoAn.exe
 D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\DoAn.pdb
-D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
-D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
-D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
-D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
-D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
-D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
-D:\HK-VI\CS511\FinalProject\DoAn\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
 D:\HK-VI\CS511\FinalProject\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache
 D:\HK-VI\CS511\FinalProject\DoAn\obj\Debug\DoAn.csproj.SuggestedBindingRedirects.cache
 D:\HK-VI\CS511\FinalProject\DoAn\obj\Debug\DoAn.ChangePass.resources
@@ -71,3 +64,7 @@ D:\DoAn\DoAn\bin\Debug\System.Data.SQLite.Linq.dll
 D:\DoAn\DoAn\bin\Debug\EntityFramework.xml
 D:\DoAn\DoAn\bin\Debug\EntityFramework.SqlServer.xml
 D:\DoAn\DoAn\bin\Debug\System.Data.SQLite.xml
+D:\HK-VI\CS511\FinalProject\DoAn\obj\Debug\DoAn.Post.resources
+D:\HK-VI\CS511\FinalProject\DoAn\obj\Debug\DoAn._post.resources
+D:\HK-VI\CS511\FinalProject\DoAn\obj\Debug\DoAn.main_posts.resources
+D:\HK-VI\CS511\FinalProject\DoAn\obj\Debug\DoAn.CreatePost.resources

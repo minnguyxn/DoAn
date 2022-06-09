@@ -25,37 +25,43 @@ namespace DoAn
             string username = Tuser.Text;
             string password = Tpass.Text;
             // khởi tạo connect
-            SQLiteConnection _con = new SQLiteConnection();
-            string _strConnect = "Data Source=MyDatabase.db;Version=3;";
-            _con.ConnectionString = _strConnect;
-            _con.Open(); // mở kết nối
-                         // câu lệnh insert user
-            string InsertSql = "SELECT * FROM users WHERE username= ? AND password=?";
-            // Thực thi câu lệnh
-            SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con);
-            cmd.Parameters.Add("$username", DbType.String).Value = username;
-            cmd.Parameters.Add("$password", DbType.String).Value = password;
-
-            SQLiteDataReader rdr = cmd.ExecuteReader();
-            //_con.Close(); // đóng kết nối
-
-            if (rdr.HasRows)
+            //SQLiteConnection _con = new SQLiteConnection();
+            //string _strConnect = "Data Source=MyDatabase.db;Version=3;";
+            using (SQLiteConnection _con = new SQLiteConnection("Data Source=MyDatabase.db;Version=3;"))
             {
-                // set biến current_user
-                panel0.Controls.Clear();
-                current_user = username;
-                MainScreen mainscreen = new MainScreen(current_user);
-                mainscreen.TopLevel = false;
-                mainscreen.Dock = DockStyle.Fill;
-                this.panel0.Controls.Add(mainscreen);
-                FormBorderStyle = FormBorderStyle.None;
-                WindowState = FormWindowState.Maximized;
-                mainscreen.Show();
-            } else
-            {
-                FalseLabel.Visible = true;
-                Tuser.Text = "";
-                Tpass.Text = "";
+                //_con.ConnectionString = _strConnect;
+                _con.Open(); // mở kết nối
+                             // câu lệnh insert user
+                string InsertSql = "SELECT * FROM users WHERE username= ? AND password=?";
+                // Thực thi câu lệnh
+                SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con);
+                cmd.Parameters.Add("$username", DbType.String).Value = username;
+                cmd.Parameters.Add("$password", DbType.String).Value = password;
+
+                SQLiteDataReader rdr = cmd.ExecuteReader();
+                //_con.Close(); // đóng kết nối
+
+                if (rdr.HasRows)
+                {
+                    // set biến current_user
+                    panel0.Controls.Clear();
+                    current_user = username;
+                    MainScreen mainscreen = new MainScreen(current_user);
+                    mainscreen.TopLevel = false;
+                    mainscreen.Dock = DockStyle.Fill;
+                    this.panel0.Controls.Add(mainscreen);
+                    FormBorderStyle = FormBorderStyle.None;
+                    WindowState = FormWindowState.Maximized;
+                    mainscreen.Show();
+                }
+                else
+                {
+                    FalseLabel.Visible = true;
+                    Tuser.Text = "";
+                    Tpass.Text = "";
+                }
+
+                _con.Close();
             }
         }
 
