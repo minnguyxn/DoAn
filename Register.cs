@@ -54,7 +54,8 @@ namespace DoAn
 
                     if (rdr.HasRows) // có user tồn tại
                     {
-
+                        label7.Visible = true;
+                        label6.Visible = false;
                     }
                     else
                     {
@@ -74,7 +75,7 @@ namespace DoAn
                         cmd.Parameters.Add("$avatar", DbType.String).Value = "avatar.jpg";
 
                         cmd.ExecuteNonQuery();
-
+                        _con.Close();
                         MessageBox.Show("Sign Up Successed");
                         Application.Restart();
                         Environment.Exit(0);

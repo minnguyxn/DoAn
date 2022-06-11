@@ -92,11 +92,11 @@ namespace DoAn
                 cmd.Parameters.Add("$address", DbType.String).Value = adressC.Text;
                 cmd.Parameters.Add("$username", DbType.String).Value = curuser;
                 SQLiteDataReader rdr = cmd.ExecuteReader();
-                _con.Close();
                 name.Text = nameC.Text;
                 email.Text = EmailC.Text;
                 phone.Text = phoneC.Text;
                 adress.Text = adressC.Text;
+                rdr.Close();
                 _con.Close();
             }
 
@@ -129,7 +129,7 @@ namespace DoAn
                 {
                     //newpath = x.FileName;
                     bunifuPictureBox1.Image = (Image)(new Bitmap(Image.FromFile(x.FileName)));
-                    test.Text = x.FileName;
+                    
                     File.Copy(x.FileName, Path.Combine(path_, curuser + Path.GetExtension(x.FileName)), true);
                     filename = curuser + Path.GetExtension(x.FileName);
                 }

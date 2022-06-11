@@ -68,3 +68,8 @@ D:\HK-VI\CS511\FinalProject\DoAn\obj\Debug\DoAn.Post.resources
 D:\HK-VI\CS511\FinalProject\DoAn\obj\Debug\DoAn._post.resources
 D:\HK-VI\CS511\FinalProject\DoAn\obj\Debug\DoAn.main_posts.resources
 D:\HK-VI\CS511\FinalProject\DoAn\obj\Debug\DoAn.CreatePost.resources
+D:\DoAn\DoAn\obj\Debug\DoAn.CreatePost.resources
+D:\DoAn\DoAn\obj\Debug\DoAn.Post.resources
+D:\DoAn\DoAn\obj\Debug\DoAn.main_posts.resources
+D:\DoAn\DoAn\obj\Debug\DoAn._post.resources
+D:\DoAn\DoAn\obj\Debug\DoAn.comment.resources

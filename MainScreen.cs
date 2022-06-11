@@ -18,7 +18,7 @@ namespace DoAn
             InitializeComponent();
             cuser = current_user;
             label1.Text = "Hello, " + cuser;
-            main_posts posts = new main_posts(panel6.Size);
+            main_posts posts = new main_posts(panel6.Size,cuser, "renderall");
             posts.TopLevel = false;
             posts.Dock = DockStyle.Fill;
             this.panel6.Controls.Add(posts);
@@ -68,6 +68,17 @@ namespace DoAn
             this.panel6.Controls.Add(createpost);
             FormBorderStyle = FormBorderStyle.None;
             createpost.Show();
+        }
+
+        private void bunifuTileButton3_Click(object sender, EventArgs e)
+        {
+            panel6.Controls.Clear();
+            main_posts posts = new main_posts(panel6.Size, cuser, "mypost");
+            posts.TopLevel = false;
+            posts.Dock = DockStyle.Fill;
+            this.panel6.Controls.Add(posts);
+            FormBorderStyle = FormBorderStyle.None;
+            posts.Show();
         }
     }
 }

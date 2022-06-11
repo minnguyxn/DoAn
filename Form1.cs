@@ -34,33 +34,36 @@ namespace DoAn
                              // câu lệnh insert user
                 string InsertSql = "SELECT * FROM users WHERE username= ? AND password=?";
                 // Thực thi câu lệnh
-                SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con);
-                cmd.Parameters.Add("$username", DbType.String).Value = username;
-                cmd.Parameters.Add("$password", DbType.String).Value = password;
-
-                SQLiteDataReader rdr = cmd.ExecuteReader();
-                //_con.Close(); // đóng kết nối
-
-                if (rdr.HasRows)
+                using (SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con))
                 {
-                    // set biến current_user
-                    panel0.Controls.Clear();
-                    current_user = username;
-                    MainScreen mainscreen = new MainScreen(current_user);
-                    mainscreen.TopLevel = false;
-                    mainscreen.Dock = DockStyle.Fill;
-                    this.panel0.Controls.Add(mainscreen);
-                    FormBorderStyle = FormBorderStyle.None;
-                    WindowState = FormWindowState.Maximized;
-                    mainscreen.Show();
-                }
-                else
-                {
-                    FalseLabel.Visible = true;
-                    Tuser.Text = "";
-                    Tpass.Text = "";
-                }
+                    //SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con);
+                    cmd.Parameters.Add("$username", DbType.String).Value = username;
+                    cmd.Parameters.Add("$password", DbType.String).Value = password;
 
+                    SQLiteDataReader rdr = cmd.ExecuteReader();
+                    //_con.Close(); // đóng kết nối
+
+                    if (rdr.HasRows)
+                    {
+                        // set biến current_user
+                        panel0.Controls.Clear();
+                        current_user = username;
+                        MainScreen mainscreen = new MainScreen(current_user);
+                        mainscreen.TopLevel = false;
+                        mainscreen.Dock = DockStyle.Fill;
+                        this.panel0.Controls.Add(mainscreen);
+                        FormBorderStyle = FormBorderStyle.None;
+                        WindowState = FormWindowState.Maximized;
+                        rdr.Close();
+                        mainscreen.Show();
+                    }
+                    else
+                    {
+                        FalseLabel.Visible = true;
+                        Tuser.Text = "";
+                        Tpass.Text = "";
+                    }
+                }
                 _con.Close();
             }
         }
