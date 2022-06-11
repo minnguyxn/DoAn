@@ -71,7 +71,7 @@ namespace DoAn
                         cmd.Parameters.Add("$email", DbType.String).Value = "null";
                         cmd.Parameters.Add("$address", DbType.String).Value = "null";
                         cmd.Parameters.Add("$phone", DbType.String).Value = "null";
-                        cmd.Parameters.Add("$avatar", DbType.String).Value = "D:\\DoAn\\DoAn\\bin\\source_csharp\\avatar.jpg";
+                        cmd.Parameters.Add("$avatar", DbType.String).Value = "avatar.jpg";
 
                         cmd.ExecuteNonQuery();
 

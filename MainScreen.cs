@@ -18,6 +18,12 @@ namespace DoAn
             InitializeComponent();
             cuser = current_user;
             label1.Text = "Hello, " + cuser;
+            main_posts posts = new main_posts(panel6.Size);
+            posts.TopLevel = false;
+            posts.Dock = DockStyle.Fill;
+            this.panel6.Controls.Add(posts);
+   
+            posts.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -51,6 +57,17 @@ namespace DoAn
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void bunifuTileButton2_Click(object sender, EventArgs e)
+        {
+            panel6.Controls.Clear();
+            CreatePost createpost = new CreatePost(cuser);
+            createpost.TopLevel = false;
+            createpost.Dock = DockStyle.Fill;
+            this.panel6.Controls.Add(createpost);
+            FormBorderStyle = FormBorderStyle.None;
+            createpost.Show();
         }
     }
 }
