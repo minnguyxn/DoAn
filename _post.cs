@@ -149,7 +149,7 @@ namespace DoAn
 
                 cmd.ExecuteNonQuery();
                 _con.Close();
-                MessageBox.Show("DSAASDAS");
+                MessageBox.Show("Rental request successfully");
             }
         }
         private void Duyetbai()
@@ -189,7 +189,7 @@ namespace DoAn
                 //cmd.Parameters.Add("$star", DbType.String).Value = curuser;
                 cmd.ExecuteNonQuery();
                 _con.Close();
-                MessageBox.Show("Hủy cho thuê");
+                MessageBox.Show("Rental request was cancel");
 
             }
         }

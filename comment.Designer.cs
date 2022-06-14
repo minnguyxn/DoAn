@@ -80,9 +80,13 @@
             // 
             // content
             // 
+            this.content.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.content.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.content.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.content.Location = new System.Drawing.Point(109, 46);
             this.content.Name = "content";
-            this.content.Size = new System.Drawing.Size(563, 63);
+            this.content.ReadOnly = true;
+            this.content.Size = new System.Drawing.Size(563, 53);
             this.content.TabIndex = 6;
             this.content.Text = "";
             // 

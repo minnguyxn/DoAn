@@ -80,5 +80,16 @@ namespace DoAn
             FormBorderStyle = FormBorderStyle.None;
             posts.Show();
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            panel6.Controls.Clear();
+            main_posts posts = new main_posts(panel6.Size, cuser, "renderall");
+            posts.TopLevel = false;
+            posts.Dock = DockStyle.Fill;
+            this.panel6.Controls.Add(posts);
+
+            posts.Show();
+        }
     }
 }

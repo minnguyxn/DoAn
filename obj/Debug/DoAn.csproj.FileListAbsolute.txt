@@ -73,3 +73,4 @@ D:\DoAn\DoAn\obj\Debug\DoAn.Post.resources
 D:\DoAn\DoAn\obj\Debug\DoAn.main_posts.resources
 D:\DoAn\DoAn\obj\Debug\DoAn._post.resources
 D:\DoAn\DoAn\obj\Debug\DoAn.comment.resources
+D:\DoAn\DoAn\obj\Debug\DoAn.Reset.resources
