@@ -91,5 +91,16 @@ namespace DoAn
 
             posts.Show();
         }
+
+        private void bunifuTileButton6_Click(object sender, EventArgs e)
+        {
+            panel6.Controls.Clear();
+            Chart chart = new Chart(cuser);
+            chart.Dock = DockStyle.Fill;
+            this.panel6.Controls.Add(chart);
+
+            chart.Show();
+            
+        }
     }
 }

@@ -100,7 +100,39 @@ namespace DoAn
 
         private void bunifuIconButton1_Click(object sender, EventArgs e)
         {
+            // like here 
+            using (SQLiteConnection _con = new SQLiteConnection("Data Source=MyDatabase.db;Version=3;"))
+            {
+                //SQLiteConnection _con = new SQLiteConnection();
+                // string _strConnect = "Data Source=MyDatabase.db;Version=3;";
+                // _con.ConnectionString = _strConnect;
+                _con.Open();
+                string SelectSql = "SELECT * FROM posts WHERE id = ?";
 
+                // Thực thi câu lệnh
+                SQLiteCommand cmd1 = new SQLiteCommand(SelectSql, _con);
+                cmd1.Parameters.Add("$id", DbType.String).Value = _id;
+                //cmd.Parameters.Add("$username", DbType.String).Value = curuser;
+                DataTable dtt = new DataTable();
+                SQLiteDataAdapter rdr = new SQLiteDataAdapter(cmd1);
+                rdr.Fill(dtt);
+                string numberliked = string.Empty;
+                foreach (DataRow dr in dtt.Rows)
+                {
+                    numberliked = dr["fullname"].ToString();
+
+                }
+
+                string InsertSql = @"UPDATE posts SET numberliked = ? WHERE id = ? ";
+                // Thực thi câu lệnh
+                SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con);
+                cmd.Parameters.Add("$star", DbType.String).Value = numberliked + ","+curuser;
+                cmd.Parameters.Add("id", DbType.String).Value = _id;
+
+                cmd.ExecuteNonQuery();
+                _con.Close();
+                MessageBox.Show("You liked this post");
+            }
         }
 
         private void bunifuCards1_Paint(object sender, PaintEventArgs e)
@@ -181,7 +213,7 @@ namespace DoAn
                 // string _strConnect = "Data Source=MyDatabase.db;Version=3;";
                 // _con.ConnectionString = _strConnect;
                 _con.Open();
-                string InsertSql = @"UPDATE posts SET status = 'available', star = 'null WHERE id = ? ";
+                string InsertSql = @"UPDATE posts SET status = 'available', star = 'null' WHERE id = ? ";
                 // Thực thi câu lệnh
                 SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con);
                 cmd.Parameters.Add("id", DbType.String).Value = _id;
@@ -207,6 +239,45 @@ namespace DoAn
         private void bunifuButton3_Click(object sender, EventArgs e)
         {
             Khongduyet();
+        }
+
+        private void bunifuIconButton2_Click(object sender, EventArgs e)
+        {
+            // dislike here 
+            using (SQLiteConnection _con = new SQLiteConnection("Data Source=MyDatabase.db;Version=3;"))
+            {
+                //SQLiteConnection _con = new SQLiteConnection();
+                // string _strConnect = "Data Source=MyDatabase.db;Version=3;";
+                // _con.ConnectionString = _strConnect;
+                _con.Open();
+                string SelectSql = "SELECT * FROM posts WHERE id = ?";
+
+                // Thực thi câu lệnh
+                SQLiteCommand cmd1 = new SQLiteCommand(SelectSql, _con);
+                cmd1.Parameters.Add("$id", DbType.String).Value = _id;
+                //cmd.Parameters.Add("$username", DbType.String).Value = curuser;
+                DataTable dtt = new DataTable();
+                SQLiteDataAdapter rdr = new SQLiteDataAdapter(cmd1);
+                rdr.Fill(dtt);
+                string numberliked = string.Empty;
+                foreach (DataRow dr in dtt.Rows)
+                {
+                    numberliked = dr["fullname"].ToString();
+
+                }
+
+                numberliked = numberliked.Replace(","+curuser, string.Empty);
+
+                string InsertSql = @"UPDATE posts SET numberliked = ? WHERE id = ? ";
+                // Thực thi câu lệnh
+                SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con);
+                cmd.Parameters.Add("$star", DbType.String).Value = numberliked;
+                cmd.Parameters.Add("id", DbType.String).Value = _id;
+
+                cmd.ExecuteNonQuery();
+                _con.Close();
+                MessageBox.Show("You disliked this post");
+            }
         }
     }
 }
