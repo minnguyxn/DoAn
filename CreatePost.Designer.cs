@@ -69,10 +69,9 @@
             // 
             this.post_content.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.post_content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.post_content.Location = new System.Drawing.Point(44, 462);
-            this.post_content.Margin = new System.Windows.Forms.Padding(4);
+            this.post_content.Location = new System.Drawing.Point(33, 375);
             this.post_content.Name = "post_content";
-            this.post_content.Size = new System.Drawing.Size(921, 130);
+            this.post_content.Size = new System.Drawing.Size(691, 106);
             this.post_content.TabIndex = 11;
             this.post_content.Text = "";
             // 
@@ -80,10 +79,9 @@
             // 
             this.title.AutoSize = true;
             this.title.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title.Location = new System.Drawing.Point(651, 62);
-            this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.title.Location = new System.Drawing.Point(488, 50);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(65, 31);
+            this.title.Size = new System.Drawing.Size(54, 25);
             this.title.TabIndex = 16;
             this.title.Text = "Title:";
             // 
@@ -91,10 +89,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(566, 334);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(424, 271);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 31);
+            this.label2.Size = new System.Drawing.Size(123, 25);
             this.label2.TabIndex = 17;
             this.label2.Text = "Vehicle Type:";
             // 
@@ -102,10 +99,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(583, 137);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(437, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 31);
+            this.label3.Size = new System.Drawing.Size(115, 25);
             this.label3.TabIndex = 18;
             this.label3.Text = "Description:";
             // 
@@ -113,10 +109,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(40, 426);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(30, 346);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 31);
+            this.label4.Size = new System.Drawing.Size(79, 25);
             this.label4.TabIndex = 19;
             this.label4.Text = "Content";
             // 
@@ -124,10 +119,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(645, 273);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(484, 222);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 31);
+            this.label5.Size = new System.Drawing.Size(59, 25);
             this.label5.TabIndex = 20;
             this.label5.Text = "Price:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -136,10 +130,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(613, 205);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(460, 167);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 31);
+            this.label6.Size = new System.Drawing.Size(90, 25);
             this.label6.TabIndex = 22;
             this.label6.Text = "Location:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -173,7 +166,7 @@
             this.bunifuButton2.DisabledFillColor = System.Drawing.Color.Empty;
             this.bunifuButton2.DisabledForecolor = System.Drawing.Color.Empty;
             this.bunifuButton2.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuButton2.ForeColor = System.Drawing.Color.White;
             this.bunifuButton2.IconLeft = null;
             this.bunifuButton2.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -193,8 +186,8 @@
             this.bunifuButton2.IdleIconLeftImage = null;
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.IndicateFocus = false;
-            this.bunifuButton2.Location = new System.Drawing.Point(290, 386);
-            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuButton2.Location = new System.Drawing.Point(218, 314);
+            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuButton2.Name = "bunifuButton2";
             this.bunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.OnDisabledState.BorderRadius = 1;
@@ -228,7 +221,7 @@
             this.bunifuButton2.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton2.OnPressedState.IconLeftImage = null;
             this.bunifuButton2.OnPressedState.IconRightImage = null;
-            this.bunifuButton2.Size = new System.Drawing.Size(140, 34);
+            this.bunifuButton2.Size = new System.Drawing.Size(105, 28);
             this.bunifuButton2.TabIndex = 9;
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -240,10 +233,9 @@
             // post_img
             // 
             this.post_img.Image = global::DoAn.Properties.Resources._default;
-            this.post_img.Location = new System.Drawing.Point(128, 13);
-            this.post_img.Margin = new System.Windows.Forms.Padding(4);
+            this.post_img.Location = new System.Drawing.Point(87, 10);
             this.post_img.Name = "post_img";
-            this.post_img.Size = new System.Drawing.Size(425, 352);
+            this.post_img.Size = new System.Drawing.Size(319, 286);
             this.post_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.post_img.TabIndex = 25;
             this.post_img.TabStop = false;
@@ -276,7 +268,8 @@
             this.post_name.IconRight = null;
             this.post_name.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.post_name.Lines = new string[0];
-            this.post_name.Location = new System.Drawing.Point(730, 40);
+            this.post_name.Location = new System.Drawing.Point(548, 32);
+            this.post_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.post_name.MaxLength = 32767;
             this.post_name.MinimumSize = new System.Drawing.Size(1, 1);
             this.post_name.Modified = false;
@@ -302,7 +295,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.post_name.OnIdleState = stateProperties4;
-            this.post_name.Padding = new System.Windows.Forms.Padding(3);
+            this.post_name.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.post_name.PasswordChar = '\0';
             this.post_name.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.post_name.PlaceholderText = "Enter text";
@@ -312,7 +305,7 @@
             this.post_name.SelectionLength = 0;
             this.post_name.SelectionStart = 0;
             this.post_name.ShortcutsEnabled = true;
-            this.post_name.Size = new System.Drawing.Size(413, 53);
+            this.post_name.Size = new System.Drawing.Size(310, 43);
             this.post_name.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.post_name.TabIndex = 26;
             this.post_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -351,7 +344,8 @@
             this.post_description.IconRight = null;
             this.post_description.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.post_description.Lines = new string[0];
-            this.post_description.Location = new System.Drawing.Point(730, 115);
+            this.post_description.Location = new System.Drawing.Point(548, 93);
+            this.post_description.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.post_description.MaxLength = 32767;
             this.post_description.MinimumSize = new System.Drawing.Size(1, 1);
             this.post_description.Modified = false;
@@ -377,7 +371,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.post_description.OnIdleState = stateProperties8;
-            this.post_description.Padding = new System.Windows.Forms.Padding(3);
+            this.post_description.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.post_description.PasswordChar = '\0';
             this.post_description.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.post_description.PlaceholderText = "Enter text";
@@ -387,7 +381,7 @@
             this.post_description.SelectionLength = 0;
             this.post_description.SelectionStart = 0;
             this.post_description.ShortcutsEnabled = true;
-            this.post_description.Size = new System.Drawing.Size(413, 53);
+            this.post_description.Size = new System.Drawing.Size(310, 43);
             this.post_description.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.post_description.TabIndex = 27;
             this.post_description.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -426,7 +420,8 @@
             this.post_location.IconRight = null;
             this.post_location.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.post_location.Lines = new string[0];
-            this.post_location.Location = new System.Drawing.Point(730, 183);
+            this.post_location.Location = new System.Drawing.Point(548, 149);
+            this.post_location.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.post_location.MaxLength = 32767;
             this.post_location.MinimumSize = new System.Drawing.Size(1, 1);
             this.post_location.Modified = false;
@@ -452,7 +447,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.post_location.OnIdleState = stateProperties12;
-            this.post_location.Padding = new System.Windows.Forms.Padding(3);
+            this.post_location.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.post_location.PasswordChar = '\0';
             this.post_location.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.post_location.PlaceholderText = "Enter text";
@@ -462,7 +457,7 @@
             this.post_location.SelectionLength = 0;
             this.post_location.SelectionStart = 0;
             this.post_location.ShortcutsEnabled = true;
-            this.post_location.Size = new System.Drawing.Size(413, 53);
+            this.post_location.Size = new System.Drawing.Size(310, 43);
             this.post_location.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.post_location.TabIndex = 28;
             this.post_location.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -501,7 +496,8 @@
             this.post_price.IconRight = null;
             this.post_price.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.post_price.Lines = new string[0];
-            this.post_price.Location = new System.Drawing.Point(730, 251);
+            this.post_price.Location = new System.Drawing.Point(548, 204);
+            this.post_price.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.post_price.MaxLength = 32767;
             this.post_price.MinimumSize = new System.Drawing.Size(1, 1);
             this.post_price.Modified = false;
@@ -527,7 +523,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.post_price.OnIdleState = stateProperties16;
-            this.post_price.Padding = new System.Windows.Forms.Padding(3);
+            this.post_price.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.post_price.PasswordChar = '\0';
             this.post_price.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.post_price.PlaceholderText = "Enter text";
@@ -537,7 +533,7 @@
             this.post_price.SelectionLength = 0;
             this.post_price.SelectionStart = 0;
             this.post_price.ShortcutsEnabled = true;
-            this.post_price.Size = new System.Drawing.Size(413, 53);
+            this.post_price.Size = new System.Drawing.Size(310, 43);
             this.post_price.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.post_price.TabIndex = 29;
             this.post_price.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -552,9 +548,10 @@
             // 
             this.post_typecar.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.post_typecar.FormattingEnabled = true;
-            this.post_typecar.Location = new System.Drawing.Point(730, 326);
+            this.post_typecar.Location = new System.Drawing.Point(548, 265);
+            this.post_typecar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.post_typecar.Name = "post_typecar";
-            this.post_typecar.Size = new System.Drawing.Size(413, 39);
+            this.post_typecar.Size = new System.Drawing.Size(311, 33);
             this.post_typecar.TabIndex = 30;
             // 
             // button1
@@ -606,7 +603,8 @@
             this.button1.IdleIconLeftImage = null;
             this.button1.IdleIconRightImage = null;
             this.button1.IndicateFocus = false;
-            this.button1.Location = new System.Drawing.Point(1031, 541);
+            this.button1.Location = new System.Drawing.Point(773, 440);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.button1.OnDisabledState.BorderRadius = 1;
@@ -640,7 +638,7 @@
             this.button1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.button1.OnPressedState.IconLeftImage = null;
             this.button1.OnPressedState.IconRightImage = null;
-            this.button1.Size = new System.Drawing.Size(130, 51);
+            this.button1.Size = new System.Drawing.Size(98, 41);
             this.button1.TabIndex = 31;
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -651,9 +649,9 @@
             // 
             // CreatePost
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1173, 607);
+            this.ClientSize = new System.Drawing.Size(880, 493);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.post_typecar);
             this.Controls.Add(this.post_price);
@@ -670,7 +668,6 @@
             this.Controls.Add(this.post_content);
             this.Controls.Add(this.bunifuButton2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CreatePost";
             this.Text = "CreatePost";
             ((System.ComponentModel.ISupportInitialize)(this.post_img)).EndInit();
