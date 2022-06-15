@@ -36,14 +36,8 @@
             this.panel0 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel_top = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.bunifuTileButton7 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuTileButton6 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuTileButton5 = new Bunifu.Framework.UI.BunifuTileButton();
@@ -51,8 +45,14 @@
             this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.panel_top = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.panel0.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -60,8 +60,8 @@
             this.panel5.SuspendLayout();
             this.panel_top.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel0
@@ -97,6 +97,20 @@
             this.panel3.Size = new System.Drawing.Size(1281, 771);
             this.panel3.TabIndex = 1;
             // 
+            // panel6
+            // 
+            this.panel6.AutoSize = true;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
+            this.panel6.BackgroundImage = global::DoAn.Properties.Resources.background;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(142, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1139, 771);
+            this.panel6.TabIndex = 0;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.OrangeRed;
@@ -114,96 +128,9 @@
             this.panel5.Size = new System.Drawing.Size(142, 771);
             this.panel5.TabIndex = 0;
             // 
-            // panel_top
-            // 
-            this.panel_top.BackColor = System.Drawing.Color.OrangeRed;
-            this.panel_top.Controls.Add(this.panel4);
-            this.panel_top.Controls.Add(this.panel2);
-            this.panel_top.Controls.Add(this.label2);
-            this.panel_top.Controls.Add(this.bunifuImageButton1);
-            this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_top.Location = new System.Drawing.Point(0, 0);
-            this.panel_top.Margin = new System.Windows.Forms.Padding(2);
-            this.panel_top.Name = "panel_top";
-            this.panel_top.Size = new System.Drawing.Size(1281, 107);
-            this.panel_top.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.bunifuPictureBox2);
-            this.panel4.Controls.Add(this.bunifuTextBox2);
-            this.panel4.Location = new System.Drawing.Point(364, 51);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(602, 55);
-            this.panel4.TabIndex = 4;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(995, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(286, 107);
-            this.panel2.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(208, 19);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 21);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Log out";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(59, 19);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 26);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Hello, user";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.OrangeRed;
-            this.label2.Font = new System.Drawing.Font("Impact", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Snow;
-            this.label2.Location = new System.Drawing.Point(116, 7);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(254, 60);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "CAR RENTAL";
-            // 
-            // panel6
-            // 
-            this.panel6.AutoSize = true;
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
-            this.panel6.BackgroundImage = global::DoAn.Properties.Resources.background;
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(142, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1139, 771);
-            this.panel6.TabIndex = 0;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
-            // 
             // bunifuTileButton7
             // 
-            this.bunifuTileButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
+            this.bunifuTileButton7.BackColor = System.Drawing.Color.DodgerBlue;
             this.bunifuTileButton7.color = System.Drawing.Color.DodgerBlue;
             this.bunifuTileButton7.colorActive = System.Drawing.Color.LightSkyBlue;
             this.bunifuTileButton7.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -223,7 +150,7 @@
             // 
             // bunifuTileButton6
             // 
-            this.bunifuTileButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.bunifuTileButton6.BackColor = System.Drawing.Color.DodgerBlue;
             this.bunifuTileButton6.color = System.Drawing.Color.DodgerBlue;
             this.bunifuTileButton6.colorActive = System.Drawing.Color.LightSkyBlue;
             this.bunifuTileButton6.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -283,7 +210,7 @@
             // 
             // bunifuTileButton3
             // 
-            this.bunifuTileButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(172)))), ((int)(((byte)(182)))));
+            this.bunifuTileButton3.BackColor = System.Drawing.Color.Red;
             this.bunifuTileButton3.color = System.Drawing.Color.Red;
             this.bunifuTileButton3.colorActive = System.Drawing.Color.OrangeRed;
             this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -303,7 +230,7 @@
             // 
             // bunifuTileButton2
             // 
-            this.bunifuTileButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(144)))));
+            this.bunifuTileButton2.BackColor = System.Drawing.Color.DodgerBlue;
             this.bunifuTileButton2.color = System.Drawing.Color.DodgerBlue;
             this.bunifuTileButton2.colorActive = System.Drawing.Color.LightSkyBlue;
             this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -323,7 +250,7 @@
             // 
             // bunifuTileButton1
             // 
-            this.bunifuTileButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(143)))), ((int)(((byte)(157)))));
+            this.bunifuTileButton1.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuTileButton1.color = System.Drawing.Color.SeaGreen;
             this.bunifuTileButton1.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -340,6 +267,30 @@
             this.bunifuTileButton1.Size = new System.Drawing.Size(142, 114);
             this.bunifuTileButton1.TabIndex = 0;
             this.bunifuTileButton1.Click += new System.EventHandler(this.bunifuTileButton1_Click);
+            // 
+            // panel_top
+            // 
+            this.panel_top.BackColor = System.Drawing.Color.OrangeRed;
+            this.panel_top.Controls.Add(this.panel4);
+            this.panel_top.Controls.Add(this.panel2);
+            this.panel_top.Controls.Add(this.label2);
+            this.panel_top.Controls.Add(this.bunifuImageButton1);
+            this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_top.Location = new System.Drawing.Point(0, 0);
+            this.panel_top.Margin = new System.Windows.Forms.Padding(2);
+            this.panel_top.Name = "panel_top";
+            this.panel_top.Size = new System.Drawing.Size(1281, 107);
+            this.panel_top.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.bunifuPictureBox2);
+            this.panel4.Controls.Add(this.bunifuTextBox2);
+            this.panel4.Location = new System.Drawing.Point(364, 51);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(602, 55);
+            this.panel4.TabIndex = 4;
             // 
             // bunifuPictureBox2
             // 
@@ -434,6 +385,55 @@
             this.bunifuTextBox2.UseSystemPasswordChar = false;
             this.bunifuTextBox2.WordWrap = true;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(995, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(286, 107);
+            this.panel2.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(208, 19);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 21);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Log out";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(2, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 26);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Hello, user";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.OrangeRed;
+            this.label2.Font = new System.Drawing.Font("Impact", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Snow;
+            this.label2.Location = new System.Drawing.Point(116, 7);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(254, 60);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "CAR RENTAL";
+            // 
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.ActiveImage = null;
@@ -488,9 +488,9 @@
             this.panel_top.ResumeLayout(false);
             this.panel_top.PerformLayout();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

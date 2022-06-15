@@ -187,7 +187,7 @@
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.IndicateFocus = false;
             this.bunifuButton2.Location = new System.Drawing.Point(218, 314);
-            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuButton2.Name = "bunifuButton2";
             this.bunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.OnDisabledState.BorderRadius = 1;
@@ -269,7 +269,7 @@
             this.post_name.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.post_name.Lines = new string[0];
             this.post_name.Location = new System.Drawing.Point(548, 32);
-            this.post_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.post_name.Margin = new System.Windows.Forms.Padding(2);
             this.post_name.MaxLength = 32767;
             this.post_name.MinimumSize = new System.Drawing.Size(1, 1);
             this.post_name.Modified = false;
@@ -295,7 +295,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.post_name.OnIdleState = stateProperties4;
-            this.post_name.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.post_name.Padding = new System.Windows.Forms.Padding(2);
             this.post_name.PasswordChar = '\0';
             this.post_name.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.post_name.PlaceholderText = "Enter text";
@@ -345,7 +345,7 @@
             this.post_description.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.post_description.Lines = new string[0];
             this.post_description.Location = new System.Drawing.Point(548, 93);
-            this.post_description.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.post_description.Margin = new System.Windows.Forms.Padding(2);
             this.post_description.MaxLength = 32767;
             this.post_description.MinimumSize = new System.Drawing.Size(1, 1);
             this.post_description.Modified = false;
@@ -371,7 +371,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.post_description.OnIdleState = stateProperties8;
-            this.post_description.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.post_description.Padding = new System.Windows.Forms.Padding(2);
             this.post_description.PasswordChar = '\0';
             this.post_description.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.post_description.PlaceholderText = "Enter text";
@@ -421,7 +421,7 @@
             this.post_location.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.post_location.Lines = new string[0];
             this.post_location.Location = new System.Drawing.Point(548, 149);
-            this.post_location.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.post_location.Margin = new System.Windows.Forms.Padding(2);
             this.post_location.MaxLength = 32767;
             this.post_location.MinimumSize = new System.Drawing.Size(1, 1);
             this.post_location.Modified = false;
@@ -447,7 +447,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.post_location.OnIdleState = stateProperties12;
-            this.post_location.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.post_location.Padding = new System.Windows.Forms.Padding(2);
             this.post_location.PasswordChar = '\0';
             this.post_location.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.post_location.PlaceholderText = "Enter text";
@@ -497,7 +497,7 @@
             this.post_price.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.post_price.Lines = new string[0];
             this.post_price.Location = new System.Drawing.Point(548, 204);
-            this.post_price.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.post_price.Margin = new System.Windows.Forms.Padding(2);
             this.post_price.MaxLength = 32767;
             this.post_price.MinimumSize = new System.Drawing.Size(1, 1);
             this.post_price.Modified = false;
@@ -523,7 +523,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.post_price.OnIdleState = stateProperties16;
-            this.post_price.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.post_price.Padding = new System.Windows.Forms.Padding(2);
             this.post_price.PasswordChar = '\0';
             this.post_price.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.post_price.PlaceholderText = "Enter text";
@@ -548,8 +548,16 @@
             // 
             this.post_typecar.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.post_typecar.FormattingEnabled = true;
+            this.post_typecar.Items.AddRange(new object[] {
+            "Minivan",
+            "Sport Car",
+            "Car",
+            "Van",
+            "Sedan",
+            "Station wagon",
+            "Hatchback"});
             this.post_typecar.Location = new System.Drawing.Point(548, 265);
-            this.post_typecar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.post_typecar.Margin = new System.Windows.Forms.Padding(2);
             this.post_typecar.Name = "post_typecar";
             this.post_typecar.Size = new System.Drawing.Size(311, 33);
             this.post_typecar.TabIndex = 30;
@@ -604,7 +612,7 @@
             this.button1.IdleIconRightImage = null;
             this.button1.IndicateFocus = false;
             this.button1.Location = new System.Drawing.Point(773, 440);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.button1.OnDisabledState.BorderRadius = 1;

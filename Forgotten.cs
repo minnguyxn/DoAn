@@ -91,5 +91,11 @@ namespace DoAn
             //FormBorderStyle = FormBorderStyle.None;
             reset1.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+            Environment.Exit(0);
+        }
     }
 }
