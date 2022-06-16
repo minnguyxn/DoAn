@@ -60,11 +60,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -81,8 +83,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1188, 492);
+            this.panel1.Size = new System.Drawing.Size(891, 400);
             this.panel1.TabIndex = 0;
             // 
             // label9
@@ -90,9 +93,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label9.Location = new System.Drawing.Point(61, 439);
+            this.label9.Location = new System.Drawing.Point(46, 357);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(281, 20);
+            this.label9.Size = new System.Drawing.Size(241, 17);
             this.label9.TabIndex = 46;
             this.label9.Text = "Reset Password with your email!";
             this.label9.Click += new System.EventHandler(this.label9_Click);
@@ -102,9 +106,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(802, 184);
+            this.label8.Location = new System.Drawing.Point(602, 150);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(234, 20);
+            this.label8.Size = new System.Drawing.Size(202, 17);
             this.label8.TabIndex = 45;
             this.label8.Text = "incorrect second password";
             this.label8.Visible = false;
@@ -114,9 +119,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(802, 113);
+            this.label7.Location = new System.Drawing.Point(602, 92);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(238, 20);
+            this.label7.Size = new System.Drawing.Size(209, 17);
             this.label7.TabIndex = 44;
             this.label7.Text = "user name not already exist";
             this.label7.Visible = false;
@@ -126,9 +132,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(802, 323);
+            this.label6.Location = new System.Drawing.Point(602, 262);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(223, 20);
+            this.label6.Size = new System.Drawing.Size(193, 17);
             this.label6.TabIndex = 43;
             this.label6.Text = "Password does not match";
             this.label6.Visible = false;
@@ -161,7 +168,8 @@
             this.pass2.IconRight = null;
             this.pass2.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.pass2.Lines = new string[0];
-            this.pass2.Location = new System.Drawing.Point(379, 152);
+            this.pass2.Location = new System.Drawing.Point(284, 124);
+            this.pass2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pass2.MaxLength = 32767;
             this.pass2.MinimumSize = new System.Drawing.Size(1, 1);
             this.pass2.Modified = false;
@@ -187,7 +195,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.pass2.OnIdleState = stateProperties4;
-            this.pass2.Padding = new System.Windows.Forms.Padding(3);
+            this.pass2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pass2.PasswordChar = '●';
             this.pass2.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.pass2.PlaceholderText = "pass 2rd";
@@ -197,7 +205,7 @@
             this.pass2.SelectionLength = 0;
             this.pass2.SelectionStart = 0;
             this.pass2.ShortcutsEnabled = true;
-            this.pass2.Size = new System.Drawing.Size(406, 52);
+            this.pass2.Size = new System.Drawing.Size(304, 42);
             this.pass2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.pass2.TabIndex = 42;
             this.pass2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -236,7 +244,8 @@
             this.rpass.IconRight = null;
             this.rpass.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rpass.Lines = new string[0];
-            this.rpass.Location = new System.Drawing.Point(379, 291);
+            this.rpass.Location = new System.Drawing.Point(284, 236);
+            this.rpass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rpass.MaxLength = 32767;
             this.rpass.MinimumSize = new System.Drawing.Size(1, 1);
             this.rpass.Modified = false;
@@ -262,7 +271,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rpass.OnIdleState = stateProperties8;
-            this.rpass.Padding = new System.Windows.Forms.Padding(3);
+            this.rpass.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rpass.PasswordChar = '●';
             this.rpass.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rpass.PlaceholderText = "User name";
@@ -272,7 +281,7 @@
             this.rpass.SelectionLength = 0;
             this.rpass.SelectionStart = 0;
             this.rpass.ShortcutsEnabled = true;
-            this.rpass.Size = new System.Drawing.Size(406, 52);
+            this.rpass.Size = new System.Drawing.Size(304, 42);
             this.rpass.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.rpass.TabIndex = 41;
             this.rpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -311,7 +320,8 @@
             this.pass.IconRight = null;
             this.pass.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.pass.Lines = new string[0];
-            this.pass.Location = new System.Drawing.Point(379, 223);
+            this.pass.Location = new System.Drawing.Point(284, 181);
+            this.pass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pass.MaxLength = 32767;
             this.pass.MinimumSize = new System.Drawing.Size(1, 1);
             this.pass.Modified = false;
@@ -337,7 +347,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.pass.OnIdleState = stateProperties12;
-            this.pass.Padding = new System.Windows.Forms.Padding(3);
+            this.pass.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pass.PasswordChar = '●';
             this.pass.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.pass.PlaceholderText = "User name";
@@ -347,7 +357,7 @@
             this.pass.SelectionLength = 0;
             this.pass.SelectionStart = 0;
             this.pass.ShortcutsEnabled = true;
-            this.pass.Size = new System.Drawing.Size(406, 52);
+            this.pass.Size = new System.Drawing.Size(304, 42);
             this.pass.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.pass.TabIndex = 40;
             this.pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -386,7 +396,8 @@
             this.Tuser.IconRight = null;
             this.Tuser.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Tuser.Lines = new string[0];
-            this.Tuser.Location = new System.Drawing.Point(379, 81);
+            this.Tuser.Location = new System.Drawing.Point(284, 66);
+            this.Tuser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Tuser.MaxLength = 32767;
             this.Tuser.MinimumSize = new System.Drawing.Size(1, 1);
             this.Tuser.Modified = false;
@@ -412,7 +423,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Tuser.OnIdleState = stateProperties16;
-            this.Tuser.Padding = new System.Windows.Forms.Padding(3);
+            this.Tuser.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Tuser.PasswordChar = '\0';
             this.Tuser.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Tuser.PlaceholderText = "User name";
@@ -422,7 +433,7 @@
             this.Tuser.SelectionLength = 0;
             this.Tuser.SelectionStart = 0;
             this.Tuser.ShortcutsEnabled = true;
-            this.Tuser.Size = new System.Drawing.Size(406, 52);
+            this.Tuser.Size = new System.Drawing.Size(304, 42);
             this.Tuser.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.Tuser.TabIndex = 39;
             this.Tuser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -438,9 +449,10 @@
             this.button1.BackColor = System.Drawing.Color.Tomato;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Snow;
-            this.button1.Location = new System.Drawing.Point(379, 363);
+            this.button1.Location = new System.Drawing.Point(284, 295);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(404, 48);
+            this.button1.Size = new System.Drawing.Size(303, 39);
             this.button1.TabIndex = 38;
             this.button1.Text = "Sign Up";
             this.button1.UseVisualStyleBackColor = false;
@@ -450,9 +462,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(149, 169);
+            this.label5.Location = new System.Drawing.Point(112, 137);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(198, 35);
+            this.label5.Size = new System.Drawing.Size(161, 29);
             this.label5.TabIndex = 37;
             this.label5.Text = "Password 2rd:";
             // 
@@ -460,9 +473,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(164, 308);
+            this.label4.Location = new System.Drawing.Point(123, 250);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(183, 35);
+            this.label4.Size = new System.Drawing.Size(149, 29);
             this.label4.TabIndex = 36;
             this.label4.Text = "re-Password:";
             // 
@@ -470,9 +484,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(201, 240);
+            this.label3.Location = new System.Drawing.Point(151, 195);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 35);
+            this.label3.Size = new System.Drawing.Size(119, 29);
             this.label3.TabIndex = 35;
             this.label3.Text = "Password:";
             // 
@@ -480,9 +495,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(180, 98);
+            this.label2.Location = new System.Drawing.Point(135, 80);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 35);
+            this.label2.Size = new System.Drawing.Size(133, 29);
             this.label2.TabIndex = 34;
             this.label2.Text = "User Name:";
             // 
@@ -490,19 +506,34 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(348, 9);
+            this.label1.Location = new System.Drawing.Point(261, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(468, 76);
+            this.label1.Size = new System.Drawing.Size(376, 61);
             this.label1.TabIndex = 4;
             this.label1.Text = "Reset Password";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(172)))), ((int)(((byte)(188)))));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(648, 295);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(147, 39);
+            this.button2.TabIndex = 47;
+            this.button2.Text = "Back to login";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Forgotten
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 492);
+            this.ClientSize = new System.Drawing.Size(891, 400);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Forgotten";
             this.Text = "Forgotten";
             this.panel1.ResumeLayout(false);
@@ -528,5 +559,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button2;
     }
 }

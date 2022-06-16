@@ -31,9 +31,9 @@ namespace DoAn
             pictureBox1.Image = (Image)(new Bitmap(Image.FromFile(path + "\\source_csharp\\" + idpost + ".jpg")));
             _id = idpost;
             curuser = _curuser;
-            bunifuButton2.Text = status == "available" ? "Available" : status == "pending" ? "pending" : "rented";
-            bunifuButton2.Enabled = status == "available";
-            bunifuButton2.BackColor = status == "available" ? Color.Blue : status == "pending" ? Color.Yellow : Color.Green;
+            bunifuButton2.Text = status == "available" ? "Click to Rent" : status == "pending" ? "Pending" : "Rented";
+            bunifuButton2.Enabled = status == "available" && _curuser != createduser;
+            bunifuButton2.BackColor = status == "available" ? Color.FromArgb(108, 196, 161) : status == "pending" ? Color.FromArgb(255, 181, 98) : Color.FromArgb(108, 196, 161);
 
             bunifuButton1.Visible = _curuser == createduser;
             bunifuButton3.Visible = _curuser == createduser;
@@ -119,7 +119,7 @@ namespace DoAn
                 string numberliked = string.Empty;
                 foreach (DataRow dr in dtt.Rows)
                 {
-                    numberliked = dr["fullname"].ToString();
+                    numberliked = dr["numberliked"].ToString();
 
                 }
 
@@ -177,11 +177,11 @@ namespace DoAn
                 // Thực thi câu lệnh
                 SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con);
                 cmd.Parameters.Add("$star", DbType.String).Value = curuser;
-                cmd.Parameters.Add("id", DbType.String).Value = _id;
+                cmd.Parameters.Add("$id", DbType.String).Value = _id;
 
                 cmd.ExecuteNonQuery();
                 _con.Close();
-                MessageBox.Show("Rental request successfully");
+                MessageBox.Show("You has requested to rent this post successfully");
             }
         }
         private void Duyetbai()
@@ -195,12 +195,12 @@ namespace DoAn
                 string InsertSql = @"UPDATE posts SET status = 'rented'  WHERE id = ? ";
                 // Thực thi câu lệnh
                 SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con);
-                cmd.Parameters.Add("id", DbType.String).Value = _id;
+                cmd.Parameters.Add("$id", DbType.String).Value = _id;
 
                 //cmd.Parameters.Add("$star", DbType.String).Value = curuser;
                 cmd.ExecuteNonQuery();
                 _con.Close();
-                MessageBox.Show("Cho thuê thành công");
+                MessageBox.Show("Rental request has been accepted");
 
             }
         }
@@ -216,12 +216,12 @@ namespace DoAn
                 string InsertSql = @"UPDATE posts SET status = 'available', star = 'null' WHERE id = ? ";
                 // Thực thi câu lệnh
                 SQLiteCommand cmd = new SQLiteCommand(InsertSql, _con);
-                cmd.Parameters.Add("id", DbType.String).Value = _id;
+                cmd.Parameters.Add("$id", DbType.String).Value = _id;
 
                 //cmd.Parameters.Add("$star", DbType.String).Value = curuser;
                 cmd.ExecuteNonQuery();
                 _con.Close();
-                MessageBox.Show("Rental request was cancel");
+                MessageBox.Show("Rental request has been cancelled");
 
             }
         }
@@ -262,7 +262,7 @@ namespace DoAn
                 string numberliked = string.Empty;
                 foreach (DataRow dr in dtt.Rows)
                 {
-                    numberliked = dr["fullname"].ToString();
+                    numberliked = dr["numberliked"].ToString();
 
                 }
 

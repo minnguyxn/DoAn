@@ -100,6 +100,8 @@ namespace DoAn
                 _con.Close();
             }
 
+            MessageBox.Show("Your infomation has been updated");
+
         }
 
        

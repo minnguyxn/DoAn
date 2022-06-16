@@ -105,7 +105,13 @@ namespace DoAn
 
         private void bunifuTileButton4_Click(object sender, EventArgs e)
         {
-
+            panel6.Controls.Clear();
+            main_posts posts = new main_posts(panel6.Size, cuser, "likedpost");
+            posts.TopLevel = false;
+            posts.Dock = DockStyle.Fill;
+            this.panel6.Controls.Add(posts);
+            FormBorderStyle = FormBorderStyle.None;
+            posts.Show();
         }
 
         private void bunifuTileButton5_Click(object sender, EventArgs e)
